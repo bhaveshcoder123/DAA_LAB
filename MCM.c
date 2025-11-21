@@ -16,7 +16,7 @@ int main() {
         dp[i] = (int*)malloc(n*sizeof(int));
     }
 
-    for(int i = n-1 ; i>=0 ; i--) {
+    for(int i = n-1 ; i>0 ; i--) {
         for(int j = 0 ; j<n ; j++) {
             if(i>=j) dp[i][j] = 0;
             else {
